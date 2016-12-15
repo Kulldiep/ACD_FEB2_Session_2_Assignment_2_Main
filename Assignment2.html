@@ -1,0 +1,46 @@
+<DOCTYPE! HTML>
+<HTML>
+<HEAD>
+<TITLE>Forms</TITLE>
+<STYLE>
+header
+{
+background-color:black;
+display:block;
+}
+</STYLE>
+</HEAD>
+<BODY>
+<HEADER> 
+Head
+<P>Lists</P>
+</HEADER>
+<FORM action="demo_form.asp" method="post">
+<FIELDSET>
+<LEGEND>Your Details:</LEGEND>
+<LABEL>Name: <INPUT type="text" name="name" size="30" maxlength="100"></LABEL><br/>
+<LABEL>Email: <INPUT type="email" name="email" size="30" maxlength="100"></LABEL><br/>
+</FIELDSET><br/>
+<FIELDSET>
+<LEGEND>Your Review:</LEGEND>
+<LABEL>How did you hear about us?
+<select>
+<OPTION>---Select---</OPTION>
+<OPTION disabled>SIFY</OPTION>
+<OPTION>Google</OPTION>
+<OPTION>Yahoo</OPTION>
+<OPTION>Friends</OPTION>
+</SELECT>
+</LABEL><br/><br/>
+<LABEL>Would you visit us again?</LABEL><br/><br/>
+<INPUT type="radio" name="r">Yes
+<INPUT type="radio" name="r">No
+<INPUT type="radio" name="r">Maybe <br/><br/>
+<LABEL>Comments:</LABEL><br/>
+<TEXTAREA rows="4" cols="50" name="comment"></TEXTAREA><br/><br/>
+<INPUT type="checkbox" value="chckbx" checked><LABEL>Sign me up for email updates</LABEL><br/>
+<INPUT type="submit" value="Submit Review">
+</FIELDSET>
+</FORM>
+</BODY>
+</HTML>
